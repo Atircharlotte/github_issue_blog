@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-gray-100 ">
         <Navbar />
-        <div className="flex">
+        <div className="flex h-screen">
           <Sidebar />
           <div className="w-3/4">{children}</div>
         </div>

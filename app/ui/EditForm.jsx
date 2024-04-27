@@ -53,6 +53,7 @@ export default function EditForm({
                   id="content"
                   name="content"
                   type="text"
+                  rows="10"
                   placeholder="Enter your content"
                   defaultValue={originalContent.body}
                   className="peer block w-full rounded-md border border-gray-200 py-2 pl-10 text-sm outline-2 placeholder:text-gray-500"

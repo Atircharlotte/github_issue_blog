@@ -11,7 +11,7 @@ export default async function Sidebar() {
   return (
     <>
       {!session && (
-        <div className="flex w-1/4 bg-slate-500 h-screen">
+        <div className="flex w-1/4 bg-slate-500 h-screen ">
           <h1 className="font-normal text-2xl text-slate-200 px-3 py-3">
             Log in to browse your repos
           </h1>

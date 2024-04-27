@@ -8,7 +8,7 @@ export default function PostList({ repoIssues, repo }) {
         key={issue.id}
         className="mx-3 my-3 bg-slate-200 px-2 py-2 hover:bg-slate-300 rounded"
       >
-        <h1>{issue.title}</h1>
+        <h1 className="text-lg">{issue.title}</h1>
       </div>
     </Link>
   ));

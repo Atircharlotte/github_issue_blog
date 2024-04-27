@@ -18,14 +18,16 @@ export default async function Home({ params, searchParams }) {
       <BackToIssueList reponame={params.reponame} />
       {/*section for blog post */}
       <PostContent thisIssue={thisIssue} />
-      {/*edit form button */}
-      <UpdateIssue reponame={params.reponame} number={params.number} />
-      {/*delete post button */}
-      <DeleteForm
-        reponame={params.reponame}
-        number={params.number}
-        accountName={session?.user?.name}
-      />
+      <div className="flex mt-10 justify-end">
+        {/*edit form button */}
+        <UpdateIssue reponame={params.reponame} number={params.number} />
+        {/*delete post button */}
+        <DeleteForm
+          reponame={params.reponame}
+          number={params.number}
+          accountName={session?.user?.name}
+        />
+      </div>
     </div>
   );
 }
